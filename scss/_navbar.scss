@@ -1,0 +1,35 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: var(--spacing-md-2) 0;
+}
+
+.navbar__logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.navbar__links {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+
+  a {
+    transition: color var(--transition);
+  }
+}
+
+.navbar__cta {
+  display: flex;
+}
+
+.navbar__cta button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

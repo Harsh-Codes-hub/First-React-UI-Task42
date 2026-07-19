@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -39,4 +40,75 @@ a {
 
 ul {
   list-style: none;
-} /*# sourceMappingURL=style.css.map */
+}
+
+:root {
+  --clr-primary: #111111;
+  --clr-secondary: #777777;
+  --clr-background: #f7f7f7;
+  --clr-white: #ffffff;
+  --ff-primary: "Poppins", sans-serif;
+  --fs-900: 4rem;
+  --fs-700: 2rem;
+  --fs-500: 1.25rem;
+  --fs-400: 1rem;
+  --radius: 999px;
+  --max-width: 1200px;
+  --transition: 0.3s ease;
+  --border-radius: 999px;
+  --spacing-sm: 0.75rem;
+  --spacing-md-1: 1rem;
+  --spacing-md-2: 1.25rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+}
+
+body {
+  font-family: var(--ff-primary);
+  background: var(--clr-background);
+  color: var(--clr-primary);
+  overflow-x: hidden;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: min(90%, 1200px);
+  margin-inline: auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-md-2) 0;
+}
+
+.navbar__logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.navbar__links {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+}
+.navbar__links a {
+  transition: color var(--transition);
+}
+
+.navbar__cta {
+  display: flex;
+}
+
+.navbar__cta button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */
