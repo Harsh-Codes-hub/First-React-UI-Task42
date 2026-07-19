@@ -50,7 +50,7 @@ function Navbar() {
             null,
             "Book a Call",
             React.createElement("i", {
-              className: "ri-arrow-right-up-line",
+              className: "ri-arrow-right-up-long-line",
             }),
           ),
         ),
