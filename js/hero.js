@@ -1,7 +1,9 @@
 function Hero() {
   return React.createElement(
     "section",
-    null,
+    {
+      className: "hero",
+    },
     React.createElement(
       "div",
       {
@@ -10,19 +12,19 @@ function Hero() {
       React.createElement(
         "div",
         {
+          className: "hero__sidebar",
+        },
+        React.createElement("span", null, "Product Designer"),
+        React.createElement("div", {
+          className: "hero__line",
+        }),
+        React.createElement("span", null, "2024"),
+      ),
+      React.createElement(
+        "div",
+        {
           className: "hero__content",
         },
-        React.createElement(
-          "div",
-          {
-            className: "hero__sidebar",
-          },
-          React.createElement("span", null, "Product Designer"),
-          React.createElement("div", {
-            className: "hero__line",
-          }),
-          React.createElement("span", null, "2024"),
-        ),
         React.createElement(
           "div",
           {
@@ -36,9 +38,10 @@ function Hero() {
             React.createElement(
               "h4",
               null,
-              React.createElement("span", null, "+"),
-              "Project completed",
+              "+",
+              React.createElement("span", null, "41"),
             ),
+            React.createElement("p", null, "Project completed"),
           ),
           React.createElement(
             "div",
@@ -48,18 +51,19 @@ function Hero() {
             React.createElement(
               "h4",
               null,
-              React.createElement("span", null, "+"),
-              "Startup raised",
+              "+",
+              React.createElement("span", null, "01"),
             ),
+            React.createElement("p", null, "Startup raised"),
           ),
         ),
         React.createElement(
           "div",
           {
-            className: "hero__main",
+            className: "hero__headline",
           },
           React.createElement("h1", null, "Hello"),
-          React.createElement("p", null, "It's D.Nova a design wizard"),
+          React.createElement("p", null, "- It's D.Nova a design wizard"),
         ),
         React.createElement(
           "div",
@@ -69,10 +73,10 @@ function Hero() {
           React.createElement(
             "button",
             null,
-            React.createElement("i", {
-                className: "ri-arrow-down-long-line",
-            }),
             "Scroll down",
+            React.createElement("i", {
+              className: "ri-arrow-down-long-line",
+            }),
           ),
         ),
       ),
@@ -81,7 +85,10 @@ function Hero() {
         {
           className: "hero__image",
         },
-        "Hero Image",
+        React.createElement("img", {
+          src: "",
+          alt: "Image",
+        }),
       ),
     ),
   );

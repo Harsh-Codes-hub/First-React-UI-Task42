@@ -1,6 +1,5 @@
 .navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 
   padding: var(--spacing-md-2) 0;
@@ -19,6 +18,8 @@
   a {
     transition: color var(--transition);
   }
+  margin-left: var(--spacing-xl);
+  margin-right: auto;
 }
 
 .navbar__cta {
