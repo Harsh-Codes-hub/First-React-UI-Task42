@@ -63,7 +63,7 @@ function Hero() {
             className: "hero__headline",
           },
           React.createElement("h1", null, "Hello"),
-          React.createElement("p", null, "- It's D.Nova a design wizard"),
+          React.createElement("p", null, "- It's Harsh a Design Creator"),
         ),
         React.createElement(
           "div",
@@ -86,7 +86,7 @@ function Hero() {
           className: "hero__image",
         },
         React.createElement("img", {
-          src: "",
+          src: "./img/pfp.png",
           alt: "Image",
         }),
       ),
