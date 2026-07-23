@@ -29,7 +29,7 @@ function Navbar() {
           {
             className: "navbar__logo",
           },
-          "LOGO",
+          "Frag.vved",
         ),
 
         React.createElement(
