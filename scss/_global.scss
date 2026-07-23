@@ -15,6 +15,20 @@ button {
 }
 
 .container {
-  width: min(90%, 1250px);
+  width: 90%;
+  max-width: 1200px;
   margin-inline: auto;
+}
+
+@media (min-width: 2100px) {
+  .container {
+    max-width: 1500px;
+  }
+
+  .hero > .container {
+    grid-template-columns:
+      max-content
+      1fr
+      45%;
+  }
 }

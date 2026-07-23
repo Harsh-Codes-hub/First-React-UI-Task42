@@ -93,7 +93,7 @@
 }
 
 .hero__headline h1 {
-  font-size: 15vw;
+  font-size: clamp(8rem, 12vw, 16rem);
   font-weight: 200;
   letter-spacing: -0.09em;
   line-height: 1.05;

@@ -76,10 +76,19 @@ button {
 }
 
 .container {
-  width: min(90%, 1250px);
+  width: 90%;
+  max-width: 1200px;
   margin-inline: auto;
 }
 
+@media (min-width: 2100px) {
+  .container {
+    max-width: 1500px;
+  }
+  .hero > .container {
+    grid-template-columns: max-content 1fr 45%;
+  }
+}
 .navbar {
   display: flex;
   align-items: center;
@@ -195,7 +204,7 @@ button {
 }
 
 .hero__headline h1 {
-  font-size: 15vw;
+  font-size: clamp(8rem, 12vw, 16rem);
   font-weight: 200;
   letter-spacing: -0.09em;
   line-height: 1.05;
