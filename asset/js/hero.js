@@ -86,7 +86,7 @@ function Hero() {
           className: "hero__image",
         },
         React.createElement("img", {
-          src: "./img/pfp.png",
+          src: "./asset/img/pfp.png",
           alt: "Image",
         }),
       ),
